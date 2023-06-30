@@ -149,8 +149,10 @@ func (p *Proxy) ServeHTTP(rw http.ResponseWriter, req *http.Request) {
 	} else {
 		p.https(rw, req)
 	}*/
+	if false{
+		p.http(rw, req)
+	}
 	p.https(rw, req)
-
 	logger.Debug("Request completed")
 }
 
