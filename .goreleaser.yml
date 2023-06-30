@@ -3,7 +3,7 @@ project_name: escobar
 
 release:
   github:
-    owner: L11R
+    owner: agreenbhm
     name: escobar
 
 builds:
