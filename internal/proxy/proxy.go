@@ -144,11 +144,12 @@ func (p *Proxy) ServeHTTP(rw http.ResponseWriter, req *http.Request) {
 
 	logger.Debug("Request started")
 
-	if req.URL.Scheme == "http" {
+	/*if req.URL.Scheme == "http" {
 		p.http(rw, req)
 	} else {
 		p.https(rw, req)
-	}
+	}*/
+	p.https(rw, req)
 
 	logger.Debug("Request completed")
 }
